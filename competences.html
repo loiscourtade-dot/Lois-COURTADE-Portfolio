@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mes compétences — Loïs Courtade</title>
+<meta name="description" content="Cinq domaines de compétences, les projets où je les ai construits et un bilan honnête.">
+<meta name="author" content="Loïs Courtade">
+<meta property="og:title" content="Mes compétences — Loïs Courtade">
+<meta property="og:description" content="Cinq domaines de compétences, les projets où je les ai construits et un bilan honnête.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="assets/fond-annecy-large.jpg">
+<meta name="theme-color" content="#0B2438">
+<link rel="icon" type="image/png" href="assets/favicon-iae.png">
+<link rel="apple-touch-icon" href="assets/favicon-iae.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;450;500;600&amp;display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div style="background: #F6F8FA; color: #0B2438">
+
+  <!-- ══ NAV ══ -->
+  <header style="height: 80px; box-sizing: border-box; padding: 0 max(20px, calc((100% - 1296px) / 2)); display: flex; align-items: center; gap: 20px; background: #FFFFFF; border-bottom: 1px solid #DAE2E9">
+    <a href="index.html" style="display: flex; align-items: center; gap: 11px; text-decoration: none; color: #0B2438; flex-shrink: 0">
+      <img src="assets/mark-iae-osv.png" alt="IAE Savoie Mont Blanc · OSV" style="height: 30px; width: auto; object-fit: contain; display: block">
+      <span style="font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 110%; font-size: 16px; letter-spacing: -0.005em">Loïs Courtade</span>
+    </a>
+    
+    <button class="navbtn" type="button" aria-label="Ouvrir le menu" aria-expanded="false"
+            onclick="document.body.classList.toggle('navopen'); this.setAttribute('aria-expanded', document.body.classList.contains('navopen'));">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0B2438" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+    </button>
+    <nav style="display: flex; align-items: center; gap: 0; margin-left: auto">
+      <a href="index.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 11px; font-size: 14px; font-weight: 450; color: #46617A; text-decoration: none">Accueil</a>
+      <a href="profil.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 11px; font-size: 14px; font-weight: 450; color: #46617A; text-decoration: none">Mon profil</a>
+      <a href="parcours.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 11px; font-size: 14px; font-weight: 450; color: #46617A; text-decoration: none">Mon parcours</a>
+      <a href="experiences.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 11px; font-size: 14px; font-weight: 450; color: #46617A; text-decoration: none">Expériences</a>
+      <a href="competences.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 11px; font-size: 14px; font-weight: 500; color: #0B2438; text-decoration: none; box-shadow: inset 0 -2px 0 #1F7A3E">Compétences</a>
+      <a href="realisations.html" style="display: inline-flex; align-items: center; height: 44px; padding: 0 11px; font-size: 14px; font-weight: 450; color: #46617A; text-decoration: none">Réalisations</a>
+    </nav>
+    <div class="ctwrap">
+      <input type="checkbox" id="contact-menu" class="ctbox" aria-label="Ouvrir les options de contact">
+      <label for="contact-menu" class="ctbtn">
+        Me contacter
+        <svg class="ctchev" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg>
+      </label>
+      <div class="ctmenu">
+        <a href="mailto:lois.courtade@gmail.com" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#14557F" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7.5l9 6 9-6"></path></svg>
+          Par e-mail
+        </a>
+        <a href="https://www.linkedin.com/in/lo%C3%AFs-courtade" target="_blank">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#14557F" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 110 3.51a2.5 2.5 0 014.98 0zM.25 8.25h4.5V24h-4.5zM8.5 8.25h4.3v2.15h.06c.6-1.1 2.06-2.26 4.24-2.26 4.54 0 5.38 2.92 5.38 6.71V24h-4.5v-6.96c0-1.66-.03-3.8-2.32-3.8-2.32 0-2.67 1.8-2.67 3.68V24H8.5z"></path></svg>
+          Sur LinkedIn
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ EN-TÊTE PHOTO ══ -->
+  <section style="position: relative; min-height: 380px; overflow: hidden; background: #0B2438">
+    <img src="assets/sauveteurs-entrainement-2.jpg" alt="Sauveteurs en entraînement sur la plage" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block">
+    <div style="position: absolute; inset: 0; background: linear-gradient(95deg, rgba(11,36,56,0.90) 0%, rgba(11,36,56,0.70) 46%, rgba(11,36,56,0.26) 100%)"></div>
+    <div style="position: relative; z-index: 2; box-sizing: border-box; min-height: 380px; padding: 56px max(20px, calc((100% - 1296px) / 2)); display: flex; flex-direction: column; justify-content: center">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #8FD97A">Mes compétences</div>
+      <h1 style="margin: 16px 0 14px; font-family: 'Archivo', sans-serif; font-weight: 800; font-stretch: 112%; font-size: 58px; line-height: 1.02; letter-spacing: -0.028em; color: #FFFFFF">Cinq domaines</h1>
+      <p style="margin: 0; max-width: 820px; font-size: 18px; line-height: 1.6; color: #DCE7EE">Pour chaque domaine : ce que je sais faire, où je l’ai construit, ce que ça a donné et ce qu’il me reste à apprendre.</p>
+    </div>
+  </section>
+
+  <!-- ══ DOMAINES ══ -->
+  <section style="box-sizing: border-box; background: #F6F8FA; padding: 76px max(20px, calc((100% - 1296px) / 2))">
+    <h2 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 110%; font-size: 34px; line-height: 1.1; letter-spacing: -0.022em; color: #0B2438">Ce que je sais faire</h2>
+    <p style="margin: 0 0 32px; max-width: 980px; font-size: 17px; line-height: 1.6; color: #46617A; text-align: justify">Ces cinq domaines recoupent les compétences du référentiel BUT GEA : Analyser, Décider, Piloter, Entreprendre, Développer, que je poursuis aujourd’hui en master, orientées marketing et sport outdoor. Chacun est rattaché aux projets et aux postes où je l’ai réellement exercé.</p>
+    <div style="display: flex; flex-direction: column; gap: 20px">
+
+      <!-- ── 01 ── -->
+      <article style="box-sizing: border-box; background: #FFFFFF; border: 1px solid #DAE2E9; border-radius: 4px; overflow: hidden">
+        <div class="row" style="min-height: 128px; box-sizing: border-box; padding: 18px 36px; background: #EDF2F5; border-bottom: 1px solid #DAE2E9; display: flex; align-items: center; gap: 26px">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; color: #AFC1CE; line-height: 1; flex-shrink: 0">01</div>
+          <div style="flex-grow: 1">
+            <h3 style="margin: 0 0 7px; font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 106%; font-size: 25px; letter-spacing: -0.016em; color: #0B2438">Marketing &amp; stratégie de marque</h3>
+            <p style="margin: 0; max-width: 780px; font-size: 15px; line-height: 1.55; color: #46617A">Construire un positionnement à partir d’un marché réel : qui achète, pourquoi et face à qui. Puis en tirer une offre et un modèle économique qui tiennent debout.</p>
+          </div>
+          <div style="flex-shrink: 0; display: inline-flex; align-items: center; height: 30px; padding: 0 13px; background: #FFFFFF; border: 1px solid #C0CCD6; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #14557F">Analyser · Entreprendre</div>
+        </div>
+        <div style="box-sizing: border-box; padding: 30px 36px 32px">
+
+          <div class="row" style="display: flex; gap: 44px; flex-wrap: wrap">
+            <div style="flex-grow: 1">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">En pratique</div>
+              <div class="g2" style="margin-top: 13px; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 28px">
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Diagnostic externe : PESTEL, analyse sectorielle</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Proposition de valeur et business model</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Diagnostic interne : SWOT, chaîne de valeur</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Business plan et plan de financement</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Segmentation et motivations d’achat</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Cartographie des parties prenantes</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Benchmark et carte de positionnement</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Estimation de parts de marché</span></div>
+              </div>
+            </div>
+            <div class="col" style="width: 320px; flex-shrink: 0">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E">Prouvé sur</div>
+              <div style="margin-top: 13px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Weart — étude de marché</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Handbox · Laine d’or · Bilb’okay</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Maison Grange</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Flam Zero</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">Où je l’ai construite</div>
+            <div class="g3" style="margin-top: 13px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Weart — étude de marché</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Avant de lancer Weart, je devais vérifier que le marché de la personnalisation textile était porteur et trouver ma place face à la concurrence.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">PESTEL, SWOT, segmentation, benchmark d’une vingtaine de concurrents et carte de positionnement. Résultat : offre repositionnée vers les clubs sportifs.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Quatre projets entrepreneuriaux</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Quatre projets menés de bout en bout pendant la formation : Handbox, Laine d’or, Bilb’okay et Flam Zero.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Pour chacun : business model, business plan, plan de financement, étude de marché, marketing stratégique et opérationnel, puis identité graphique.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Maison Grange — diagnostic</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Une boulangerie-pâtisserie-traiteur de trois points de vente et d’une vingtaine de salariés, à accompagner dans la numérisation de sa gestion.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Étude du fonctionnement actuel et de ses limites, cartographie des parties prenantes et distinction des enjeux stratégiques et opérationnels.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="g2" style="margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EAF4EE; border: 1px solid #BEDCC9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 10px">Mes forces</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Je sais structurer une analyse, croiser plusieurs sources et garder du recul sur un marché concurrentiel. Je relie l’analyse à une décision plutôt que de la laisser théorique.</p>
+            </div>
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 10px">Mes axes de progrès</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">J’ai tendance à vouloir tout analyser. Sur Weart, certaines études ont été longues au regard de ce qu’elles ont rapporté. J’apprends à prioriser l’analyse qui sert la décision.</p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ── 02 ── -->
+      <article style="box-sizing: border-box; background: #FFFFFF; border: 1px solid #DAE2E9; border-radius: 4px; overflow: hidden">
+        <div class="row" style="min-height: 128px; box-sizing: border-box; padding: 18px 36px; background: #EDF2F5; border-bottom: 1px solid #DAE2E9; display: flex; align-items: center; gap: 26px">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; color: #AFC1CE; line-height: 1; flex-shrink: 0">02</div>
+          <div style="flex-grow: 1">
+            <h3 style="margin: 0 0 7px; font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 106%; font-size: 25px; letter-spacing: -0.016em; color: #0B2438">Communication digitale &amp; contenu</h3>
+            <p style="margin: 0; max-width: 780px; font-size: 15px; line-height: 1.55; color: #46617A">Faire exister une marque en ligne : le site, les mots-clés, les collaborations qui ramènent du trafic et les supports qui donnent envie d’acheter.</p>
+          </div>
+          <div style="flex-shrink: 0; display: inline-flex; align-items: center; height: 30px; padding: 0 13px; background: #FFFFFF; border: 1px solid #C0CCD6; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #14557F">Développer · Piloter</div>
+        </div>
+        <div style="box-sizing: border-box; padding: 30px 36px 32px">
+
+          <div class="row" style="display: flex; gap: 44px; flex-wrap: wrap">
+            <div style="flex-grow: 1">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">En pratique</div>
+              <div class="g2" style="margin-top: 13px; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 28px">
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Refonte de site, de la structure au contenu</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Personnalité de marque et ton éditorial</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Référencement local : mots-clés, backlinks</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Fiches produit et mise en valeur de l’offre</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Stratégie de communication de marque</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Analyse stratégique d’un site existant</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Collaborations créatives avec des artistes</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Promotion d’un lieu ou d’un événement</span></div>
+              </div>
+            </div>
+            <div class="col" style="width: 320px; flex-shrink: 0">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E">Prouvé sur</div>
+              <div style="margin-top: 13px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">RC Créations — refonte du site</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Weart</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">WinPub</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Espace Renoir</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">Où je l’ai construite</div>
+            <div class="g3" style="margin-top: 13px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">RC Créations — refonte du site</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Le site de l’entreprise ne servait plus son activité. Pendant mon stage, j’ai mené sa refonte complète.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Structure, arborescence, contenus et visuels repris entièrement, en lien avec la nouvelle identité de la marque. Le site refondu est en ligne.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Weart — communication de marque</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Une marque nouvelle, sans notoriété ni budget média : il fallait la faire exister en ligne par ses propres moyens.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Identité, ton et personnalité de marque, puis référencement local par mots-clés et backlinks obtenus via une collaboration avec l’artiste Lilian Potignon.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">WinPub — analyse stratégique</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Premier stage du BUT, dans une entreprise d’objets et de supports publicitaires, côté commercial et achats.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Recherche de fournisseurs, création de fiches produit et mise en valeur de l’offre, puis analyse stratégique du site internet et recommandations.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="g2" style="margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EAF4EE; border: 1px solid #BEDCC9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 10px">Mes forces</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Créativité et cohérence : je sais donner à une marque un univers, un ton et des supports qui vont ensemble et relier chaque choix de communication à un objectif commercial.</p>
+            </div>
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 10px">Mes axes de progrès</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Le digital suivi dans la durée. Audience, itérations sur plusieurs mois, publicité payante est ce que j’ai le moins pratiqué : mes projets sont restés à taille réduite. C’est ce que je viens chercher en alternance.</p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ── 03 ── -->
+      <article style="box-sizing: border-box; background: #FFFFFF; border: 1px solid #DAE2E9; border-radius: 4px; overflow: hidden">
+        <div class="row" style="min-height: 128px; box-sizing: border-box; padding: 18px 36px; background: #EDF2F5; border-bottom: 1px solid #DAE2E9; display: flex; align-items: center; gap: 26px">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; color: #AFC1CE; line-height: 1; flex-shrink: 0">03</div>
+          <div style="flex-grow: 1">
+            <h3 style="margin: 0 0 7px; font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 106%; font-size: 25px; letter-spacing: -0.016em; color: #0B2438">Direction artistique &amp; création</h3>
+            <p style="margin: 0; max-width: 780px; font-size: 15px; line-height: 1.55; color: #46617A">Je dessine ce que je vends. Du logo au fichier prêt pour la sérigraphie, sans passer par un prestataire.</p>
+          </div>
+          <div style="flex-shrink: 0; display: inline-flex; align-items: center; height: 30px; padding: 0 13px; background: #FFFFFF; border: 1px solid #C0CCD6; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #14557F">Développer</div>
+        </div>
+        <div style="box-sizing: border-box; padding: 30px 36px 32px">
+
+          <div class="row" style="display: flex; gap: 44px; flex-wrap: wrap">
+            <div style="flex-grow: 1">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">En pratique</div>
+              <div class="g2" style="margin-top: 13px; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 28px">
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Logos et identités visuelles complètes</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Planches de tendance et univers de marque</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Chartes graphiques et déclinaisons</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Fichiers de production : sérigraphie, flocage</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Affiches et supports de communication</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Retouche et montage photo</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Cartes de visite et supports imprimés</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Montage vidéo : Premiere Pro, Sony Vegas</span></div>
+              </div>
+            </div>
+            <div class="col" style="width: 320px; flex-shrink: 0">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E">Prouvé sur</div>
+              <div style="margin-top: 13px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+                <a href="realisations.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">6 identités de marque créées</a>
+                <a href="realisations.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Weart · RC Créations</a>
+                <a href="realisations.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Handbox · Laine d’or · Bilb’okay</a>
+                <a href="realisations.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Toutes mes réalisations</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">Où je l’ai construite</div>
+            <div class="g3" style="margin-top: 13px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Weart — identité complète</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Ma propre marque : tout était à créer, du nom au rendu final sur le textile, sans budget d’agence.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Logotype, planche de tendance, personnalité de marque et fichiers de personnalisation, jusqu’aux maillots livrés aux clubs (série ZIG).</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">RC Créations — refonte du logo</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">L’entreprise voulait moderniser son identité sans perdre ce que ses clients reconnaissaient déjà.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Refonte du logotype, mood board de direction artistique et créations à la demande pour les clients, produites pendant les trois mois de stage.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Handbox, Laine d’or, Bilb’okay</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Trois projets entrepreneuriaux qui devaient chacun avoir une identité crédible et tenir sur le papier.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Logotype, affiche, carte de visite recto-verso et planche de tendance, conçus sur Illustrator et Photoshop. Les rendus sont en Réalisations.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="g2" style="margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EAF4EE; border: 1px solid #BEDCC9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 10px">Mes forces</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Je passe du concept au fichier de production sans intermédiaire : je peux tester une piste, la corriger et la livrer dans la journée, ce qui change tout quand un délai se resserre.</p>
+            </div>
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 10px">Mes axes de progrès</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Je suis autodidacte sur la suite Adobe. Je gagne à formaliser davantage mes chartes — grille, tailles minimales, usages interdits — pour qu’un tiers puisse reprendre mes fichiers sans moi.</p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ── 04 ── -->
+      <article style="box-sizing: border-box; background: #FFFFFF; border: 1px solid #DAE2E9; border-radius: 4px; overflow: hidden">
+        <div class="row" style="min-height: 128px; box-sizing: border-box; padding: 18px 36px; background: #EDF2F5; border-bottom: 1px solid #DAE2E9; display: flex; align-items: center; gap: 26px">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; color: #AFC1CE; line-height: 1; flex-shrink: 0">04</div>
+          <div style="flex-grow: 1">
+            <h3 style="margin: 0 0 7px; font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 106%; font-size: 25px; letter-spacing: -0.016em; color: #0B2438">Gestion &amp; pilotage</h3>
+            <p style="margin: 0; max-width: 780px; font-size: 15px; line-height: 1.55; color: #46617A">Un projet marketing qui ne tient pas ses coûts n’en est pas un. Je chiffre, je suis les écarts et j’ajuste.</p>
+          </div>
+          <div style="flex-shrink: 0; display: inline-flex; align-items: center; height: 30px; padding: 0 13px; background: #FFFFFF; border: 1px solid #C0CCD6; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #14557F">Décider · Piloter</div>
+        </div>
+        <div style="box-sizing: border-box; padding: 30px 36px 32px">
+
+          <div class="row" style="display: flex; gap: 44px; flex-wrap: wrap">
+            <div style="flex-grow: 1">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">En pratique</div>
+              <div class="g2" style="margin-top: 13px; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 28px">
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Coût de revient, prix de vente et marge</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Diagramme de Gantt et objectifs SMART</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Devis, factures et bons de commande</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Matrice RACI et comité de pilotage</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Tableau de bord hebdomadaire et écarts</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Standardisation de fiches produit</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Excel avancé et automatisation des prix</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Tenue de caisse et billetterie</span></div>
+              </div>
+            </div>
+            <div class="col" style="width: 320px; flex-shrink: 0">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E">Prouvé sur</div>
+              <div style="margin-top: 13px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Weart — chiffrage</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Maison Grange</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">RC Créations</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Paroles &amp; Musiques</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">Où je l’ai construite</div>
+            <div class="g3" style="margin-top: 13px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Weart — du coût au prix</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Pour vendre à des clubs sportifs, il fallait un prix à la fois compétitif et rentable, défendable ligne par ligne.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Simulation d’une commande complète et choix du textile, de la méthode d'impression et du fournisseur en fonction des critères du client (prix, qualité, matières écoresponsables...)</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Weart — piloter la prospection</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Seul aux commandes, je risquais de me disperser et de ne pas voir qu’une stratégie ne fonctionnait pas.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Tableau de bord hebdomadaire (objectif, réalisé, écart, résultat), Gantt et objectifs SMART. L’écart m’a fait réorienter la cible vers les clubs.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Maison Grange — fiabiliser</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Trois points de vente fixaient leurs prix sans toujours les relier à leurs coûts, avec des pratiques différentes.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Fiches produits standardisées, prix automatisés à partir des coûts de revient, puis gouvernance formalisée : RACI, comité de pilotage, suivi mensuel.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="g2" style="margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EAF4EE; border: 1px solid #BEDCC9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 10px">Mes forces</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Je suis à l’aise avec le chiffre et la logique coût → prix → marge. Je structure mes calculs proprement et je sais les présenter pour appuyer une décision.</p>
+            </div>
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 10px">Mes axes de progrès</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Au début, j’ai sous-estimé l’impact des détails de gestion. La vente de maillots de football me l’a appris à mes dépens : un produit réussi ne compense pas une marge mal calculée.</p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ── 05 ── -->
+      <article style="box-sizing: border-box; background: #FFFFFF; border: 1px solid #DAE2E9; border-radius: 4px; overflow: hidden">
+        <div class="row" style="min-height: 128px; box-sizing: border-box; padding: 18px 36px; background: #EDF2F5; border-bottom: 1px solid #DAE2E9; display: flex; align-items: center; gap: 26px">
+          <div style="font-family: 'IBM Plex Mono', monospace; font-size: 34px; font-weight: 600; color: #AFC1CE; line-height: 1; flex-shrink: 0">05</div>
+          <div style="flex-grow: 1">
+            <h3 style="margin: 0 0 7px; font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 106%; font-size: 25px; letter-spacing: -0.016em; color: #0B2438">Management &amp; terrain</h3>
+            <p style="margin: 0; max-width: 780px; font-size: 15px; line-height: 1.55; color: #46617A">Encadrer une équipe quand l’erreur coûte cher. C’est ce que je fais chaque été, et ça se transpose au bureau.</p>
+          </div>
+          <div style="flex-shrink: 0; display: inline-flex; align-items: center; height: 30px; padding: 0 13px; background: #FFFFFF; border: 1px solid #C0CCD6; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #14557F">Piloter · Développer</div>
+        </div>
+        <div style="box-sizing: border-box; padding: 30px 36px 32px">
+
+          <div class="row" style="display: flex; gap: 44px; flex-wrap: wrap">
+            <div style="flex-grow: 1">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">En pratique</div>
+              <div class="g2" style="margin-top: 13px; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 28px">
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Encadrement et répartition des rôles</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Décision rapide et sang-froid sous pression</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Rotations, protocoles et consignes</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Feedback et gestion des tensions</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Formation et accompagnement des recrues</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Évaluation de la performance d’une équipe</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Allocation de moyens limités sur une zone</span></div>
+                <div style="display: flex; gap: 11px"><span style="width: 6px; height: 6px; background: #14557F; flex-shrink: 0; margin-top: 7px; display: block"></span><span style="font-size: 14px; line-height: 1.5; color: #24384C">Travail en équipe pluridisciplinaire</span></div>
+              </div>
+            </div>
+            <div class="col" style="width: 320px; flex-shrink: 0">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E">Prouvé sur</div>
+              <div style="margin-top: 13px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start">
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Chef de poste — SDIS de l’Aude</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Encadrement d’une équipe</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Hackathon B-KINETIC</a>
+                <a href="experiences.html" style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; background: #EDF2F5; border: 1px solid #CFD9E2; border-radius: 3px; font-size: 13.5px; font-weight: 500; color: #0B2438; text-decoration: none">Secouriste — Roannais</a>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 28px">
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488">Où je l’ai construite</div>
+            <div class="g3" style="margin-top: 13px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px">
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Chef de poste — SDIS de l’Aude</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Chaque été à Leucate, je suis responsable d’une équipe de sauveteurs et de la sécurité d’une zone de baignade.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Rôles et rotations, application des protocoles, formation des recrues et allocation des moyens : envoyer du monde quelque part, c’est en manquer ailleurs.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">SAE GEMA — encadrer une équipe</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Une mise en situation consacrée à l’encadrement optimal d’une équipe, du cadrage jusqu’à l’évaluation.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Organiser le travail et répartir les rôles, animer et motiver le collectif, donner du feedback, évaluer la performance et ajuster ma posture.</p>
+              </div>
+              <div style="box-sizing: border-box; padding: 18px 20px; background: #F6F8FA; border: 1px solid #DAE2E9; border-left: 3px solid #14557F; border-radius: 3px">
+                <h4 style="margin: 0 0 12px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 15.5px; line-height: 1.3; color: #0B2438">Hackathon B-KINETIC</h4>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 5px">Le contexte</div>
+                <p style="margin: 0 0 13px; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Des profils très différents réunis autour d’un même défi, avec quelques heures pour livrer un concept.</p>
+                <div style="font-family: 'IBM Plex Mono', monospace; font-size: 9.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 5px">Ce que j’ai fait</div>
+                <p style="margin: 0; font-size: 13.5px; line-height: 1.55; color: #24384C; text-align: justify">Nous avons conçu Flam Zero, un extincteur fixe au plafond diffusant du CO₂ dès le départ d’un feu domestique, et l’avons défendu devant un jury.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="g2" style="margin-top: 28px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EAF4EE; border: 1px solid #BEDCC9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #1F7A3E; margin-bottom: 10px">Mes forces</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Organisation, sang-froid et pilotage par les chiffres. Je sais tenir un cap et ajuster quand les résultats ne suivent pas.</p>
+            </div>
+            <div style="box-sizing: border-box; padding: 20px 22px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 3px">
+              <div style="font-family: 'IBM Plex Mono', monospace; font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #5C7488; margin-bottom: 10px">Mes axes de progrès</div>
+              <p style="margin: 0; font-size: 14px; line-height: 1.6; color: #24384C; text-align: justify">Je peux vouloir tout gérer moi-même. Weart, mené en grande autonomie, m’a parfois enfermé dans ce réflexe. Le poste de secours m’apprend l’inverse : répartir et faire confiance.</p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══ OUTILS ══ -->
+  <section style="min-height: 420px; box-sizing: border-box; background: #FFFFFF; border-top: 1px solid #DAE2E9; padding: 76px max(20px, calc((100% - 1296px) / 2))">
+    <h2 style="margin: 0 0 30px; font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 110%; font-size: 34px; line-height: 1.1; letter-spacing: -0.022em; color: #0B2438">Les outils que j’utilise</h2>
+    <div class="g4" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px">
+      <div style="box-sizing: border-box; min-height: 190px; padding: 24px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 4px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14557F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5z"></path><path d="M3 13l9 5 9-5"></path></svg>
+        <div style="margin-top: 13px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 16.5px; color: #0B2438">Création</div>
+        <div style="margin-top: 8px; font-size: 14.5px; line-height: 1.65; color: #46617A">Photoshop · Illustrator<br>Premiere Pro · Sony Vegas<br>Fichiers prêts pour l’impression</div>
+      </div>
+      <div style="box-sizing: border-box; min-height: 190px; padding: 24px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 4px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14557F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V9M10 20V4M16 20v-8M22 20H2"></path></svg>
+        <div style="margin-top: 13px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 16.5px; color: #0B2438">Gestion &amp; données</div>
+        <div style="margin-top: 8px; font-size: 14.5px; line-height: 1.65; color: #46617A">Excel avancé · Pack Office<br>Tableaux de bord, Gantt, RACI<br>Devis et facturation</div>
+      </div>
+      <div style="box-sizing: border-box; min-height: 190px; padding: 24px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 4px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14557F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"></path></svg>
+        <div style="margin-top: 13px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 16.5px; color: #0B2438">Langues</div>
+        <div style="margin-top: 8px; font-size: 14.5px; line-height: 1.65; color: #46617A">Français — langue maternelle<br>Anglais — B1, TOEIC 665<br>Anglais appliqué aux affaires</div>
+      </div>
+      <div style="box-sizing: border-box; min-height: 190px; padding: 24px; background: #EDF2F5; border: 1px solid #DAE2E9; border-radius: 4px">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#14557F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 4v6c0 4.5-3 7.5-7.5 8-4.5-.5-7.5-3.5-7.5-8V7z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        <div style="margin-top: 13px; font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 16.5px; color: #0B2438">Terrain</div>
+        <div style="margin-top: 8px; font-size: 14.5px; line-height: 1.65; color: #46617A">BNSSA · PSE2<br>Permis B — véhiculé<br>Permis bateau côtier</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BANDEAU PHOTO ══ -->
+  <section style="position: relative; min-height: 360px; overflow: hidden; background: #0B2438">
+    <img src="assets/sauvetage-en-mer.jpg" alt="Intervention de sauvetage en mer" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; object-position: 50% 33.0844%">
+    <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(11,36,56,0.88) 0%, rgba(11,36,56,0.60) 48%, rgba(11,36,56,0.18) 100%)"></div>
+    <div style="position: relative; z-index: 2; box-sizing: border-box; min-height: 360px; padding: 56px max(20px, calc((100% - 1296px) / 2)); display: flex; flex-direction: column; justify-content: center; max-width: calc(780px + 2 * max(20px, calc((100% - 1296px) / 2)))">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #8FD97A">Ce qui ne s’apprend pas en cours</div>
+      <p style="margin: 20px 0 0; font-family: 'Archivo', sans-serif; font-weight: 600; font-stretch: 106%; font-size: 30px; line-height: 1.3; letter-spacing: -0.018em; color: #FFFFFF">Décider vite, avec des moyens limités et des gens qui comptent sur vous.&nbsp;</p>
+    </div>
+  </section>
+
+  <!-- ══ NOTE SOCLE ══ -->
+  <section class="row" style="min-height: 330px; box-sizing: border-box; background: #EDF2F5; padding: 0 max(20px, calc((100% - 1296px) / 2)); display: flex; align-items: center; justify-content: space-between; gap: 48px">
+    <div class="lede" style="max-width: 820px">
+      <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: #5C7488">D’où viennent ces compétences ?</div>
+      <p style="margin: 14px 0 0; font-size: 17px; line-height: 1.6; color: #24384C; text-align: justify">Ces cinq domaines se sont construits pendant mon BUT GEA, parcours GEMA, puis sur le terrain. Le master que je suis aujourd’hui les oriente vers le marketing du sport outdoor.</p>
+    </div>
+    <a href="parcours.html" style="display: inline-flex; align-items: center; gap: 10px; height: 50px; padding: 0 24px; background: #FFFFFF; border: 1.5px solid #B9C7D2; color: #0B2438; font-size: 15px; font-weight: 600; border-radius: 3px; text-decoration: none; flex-shrink: 0">
+      Voir mon parcours
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#0B2438" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h13M12.5 6l6 6-6 6"></path></svg>
+    </a>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer style="box-sizing: border-box; background: #071A2A; padding: 58px max(20px, calc((100% - 1296px) / 2)) 0; display: flex; flex-direction: column">
+    <div class="row" style="display: flex; gap: 72px; flex-grow: 1">
+      <div class="col" style="width: 400px">
+        <div style="display: flex; align-items: center; gap: 11px">
+          <img src="assets/mark-iae-osv.png" alt="IAE Savoie Mont Blanc · OSV" style="height: 30px; width: auto; object-fit: contain; display: block">
+          <span style="font-family: 'Archivo', sans-serif; font-weight: 700; font-stretch: 110%; font-size: 16px; color: #FFFFFF">Loïs Courtade</span>
+        </div>
+        <p style="margin: 16px 0 0; font-size: 14.5px; line-height: 1.6; color: #7E96A8">Master 1 Stratégie Digitale — Marketing &amp; Sport Outdoor, IAE Savoie Mont Blanc, Annecy.</p>
+        <div style="display: inline-flex; align-items: center; gap: 9px; margin-top: 18px; height: 30px; padding: 0 13px; border: 1px solid #2C4A62; border-radius: 999px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: #8FD97A">
+          <span style="width: 6px; height: 6px; border-radius: 50%; background: #5FB945; display: block"></span>
+          Alternance 2026 — 2028
+        </div>
+      </div>
+      <div class="col" style="width: 190px">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5C7488">Navigation</div>
+        <div style="display: flex; flex-direction: column; gap: 2px; margin-top: 14px">
+          <a href="index.html" style="font-size: 14px; color: #C3D3DE; text-decoration: none; line-height: 1.85">Accueil</a>
+          <a href="profil.html" style="font-size: 14px; color: #C3D3DE; text-decoration: none; line-height: 1.85">Mon profil</a>
+          <a href="parcours.html" style="font-size: 14px; color: #C3D3DE; text-decoration: none; line-height: 1.85">Mon parcours</a>
+          <a href="experiences.html" style="font-size: 14px; color: #C3D3DE; text-decoration: none; line-height: 1.85">Mes expériences</a>
+          <a href="realisations.html" style="font-size: 14px; color: #C3D3DE; text-decoration: none; line-height: 1.85">Mes réalisations</a>
+        </div>
+      </div>
+      <div style="flex-grow: 1">
+        <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #5C7488">Contact</div>
+        <div style="display: flex; flex-direction: column; gap: 11px; margin-top: 16px">
+          <a href="mailto:lois.courtade@gmail.com" target="_blank" style="display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: #C3D3DE; text-decoration: none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5C7488" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7.5l9 6 9-6"></path></svg>
+            lois.courtade@gmail.com
+          </a>
+          <a href="tel:+33651937642" target="_blank" style="display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: #C3D3DE; text-decoration: none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5C7488" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"></path></svg>
+            06 51 93 76 42
+          </a>
+          <a href="https://www.linkedin.com/in/lo%C3%AFs-courtade" target="_blank" style="display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: #C3D3DE; text-decoration: none">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#5C7488" aria-hidden="true"><path d="M4.98 3.5A2.5 2.5 0 110 3.51a2.5 2.5 0 014.98 0zM.25 8.25h4.5V24h-4.5zM8.5 8.25h4.3v2.15h.06c.6-1.1 2.06-2.26 4.24-2.26 4.54 0 5.38 2.92 5.38 6.71V24h-4.5v-6.96c0-1.66-.03-3.8-2.32-3.8-2.32 0-2.67 1.8-2.67 3.68V24H8.5z"></path></svg>
+            linkedin.com/in/loïs-courtade
+          </a>
+          <div style="display: flex; align-items: center; gap: 10px; font-size: 14.5px; color: #7E96A8">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5C7488" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
+            Annecy (74) · Roanne (42)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="min-height: 56px; padding: 14px 0; border-top: 1px solid #1B3348; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px">
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #5C7488">© 2026 Loïs Courtade — Portfolio</span>
+      <span style="font-family: 'IBM Plex Mono', monospace; font-size: 11.5px; letter-spacing: 0.06em; color: #5C7488">Marketing &amp; Sport Outdoor</span>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
